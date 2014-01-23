@@ -1,0 +1,333 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link id="Link1" href="~/css/css.css" rel="stylesheet" type="text/css" runat="server" />
+    <link id="Link2" href="~/css/Extra.css" rel="stylesheet" type="text/css" runat="server" />
+    <link id="Link3" href="~/css/ControlCss.css" rel="stylesheet" type="text/css" runat="server" />
+    <style type="text/css">
+        .STYLE1
+        {
+            color: #000;
+        }
+        .STYLE6
+        {
+            color: #990000;
+        }
+        .STYLE7
+        {
+            color: #FF0000;
+        }
+        .ModelDlgBackGround
+        {
+            background-color: #CCCCCC;
+            filter: Alpha(Opacity=40);
+            z-index: 110;
+            left: 0px;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            height: 100%;
+        }
+        .ModelDlgArea
+        {
+            z-index: 111;
+            filter: Alpha(Opacity=100);
+            left: 0px;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            height: 100%;
+        }
+        .ModelDlgWindow
+        {
+            position: fixed;
+            z-index: 120;
+            width: 300px;
+            height: 300px;
+            margin-top: 150px;
+            margin-left: 40%;
+            background-color: #FFFFFF;
+            border-right-width: 3px;
+            border-bottom-width: 3px;
+            border-style: solid;
+            border-top-color: #666666;
+            border-right-color: #000099;
+            border-bottom-color: #000099;
+            border-left-color: #666666;
+            border-top-width: 1px;
+            border-left-width: 1px;
+        }
+        .ModelDlgTitle
+        {
+            color: #FFFFFF;
+            background-color: #003366; /*margin: 3px;*/
+            padding: 3px;
+        }
+        .ModelDlgContent
+        {
+            width: 290px;
+            height: 220px;
+            margin: 3px; /*padding: 5px;*/
+            overflow: auto;
+        }
+        .ModelDlgCmd
+        {
+            /*margin: 3px;*/ /*padding: 5px;*/
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .LoginInfo
+        {
+            color: #fFd000;
+        }
+    </style>
+</head>
+<body>
+    <table width="1250px" align="center" cellpadding="0" border="0">
+        <tr>
+            <td align="left">
+                <form id="formMaster" runat="server">
+                <asp:ScriptManager ID="ScriptManager1" AllowCustomErrorsRedirect="true" runat="server"
+                    OnAsyncPostBackError="ScriptManager1_AsyncPostBackError">
+                </asp:ScriptManager>
+                <div style="width: 1250px; margin-left: auto; margin-right: auto;" id="divMenu" runat="server">
+                    <div style="width: 1250px; background-color: #FFFFFF; color: #FFFFFF; padding-top: 0px;
+                        padding-bottom: 0px;">
+                        <table id="Table1" runat="server" cellpadding="0" class="header_bg" cellspacing="0"
+                            style="width: 1250px; height: 120px;">
+                            <tr>
+                                <td colspan="2" valign="top" style="padding-top: 5px; padding-left: 600px;">
+                                    <asp:Label ID="Label1" runat="server" Text='<%$Resources:Common,Label_Welcome %>'></asp:Label>
+                                    <asp:Label ID="StuffNameCtl" runat="server" CssClass="LoginInfo" />&nbsp;&nbsp;&nbsp;<asp:Label
+                                        ID="Label2" runat="server" Text='<%$Resources:Common,Label_LastLoginTime %>'></asp:Label><asp:Label
+                                            ID="LastLogInTimeCtl" runat="server" CssClass="LoginInfo" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:Label ID="PositionSelectLabel" Visible="false" Text='<%$Resources:Common,Label_Position %>'
+                                        runat="server" />
+                                    <asp:DropDownList Visible="false" ID="PositionSelectCtl" runat="server" AutoPostBack="true"
+                                        CssClass="InputCombo" Width="120" OnSelectedIndexChanged="PositionSelectCtl_SelectedIndexChanged" />
+                                    &nbsp; <span class="STYLE1">
+                                        <asp:LinkButton ID="LogOutBtn" CssClass="white_link" runat="server" Text='<%$Resources:Common,Button_Logout %>'
+                                            OnClick="LogOutBtn_Click"></asp:LinkButton>
+                                        &nbsp;&nbsp;
+                                        <asp:HyperLink ID="HelpID" runat="server" Text='<%$Resources:Common,Button_Help %>'
+                                            CssClass="white_link" NavigateUrl="~/TemplateExcel/help.rar"></asp:HyperLink>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-left: 250px;">
+                                    <asp:Menu ID="NavigateMenu" runat="server" MaximumDynamicDisplayLevels="2" StaticPopOutImageTextFormatString=""
+                                        SkipLinkText="" StaticSubMenuIndent="0px" EnableViewState="False" Orientation="Horizontal"
+                                        Height="28px" DynamicHorizontalOffset="5" StaticEnableDefaultPopOutImage="false">
+                                        <StaticMenuItemStyle CssClass="ms-topnav" />
+                                        <StaticHoverStyle CssClass="ms-topNavHover" />
+                                        <DynamicHoverStyle CssClass="ms-topNavFlyOutsHover" BackColor="#EA0000" />
+                                        <DynamicMenuStyle CssClass="ms-topNavFlyOutsBorder" HorizontalPadding="0px" />
+                                        <DynamicMenuItemStyle CssClass="ms-topNavFlyOuts" ItemSpacing="0px" />
+                                        <Items>
+                                            <asp:MenuItem meta:resourcekey="MenuItem1000" Value="Folder" Selectable="false">
+                                                <asp:MenuItem meta:resourcekey="MenuItem1101" Value="个人费用报销申请" NavigateUrl="FormTE/FormTravelReimburseApply.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem1105" Value="个人费用报销申请" NavigateUrl="FormTE/FormPersonalReimburseApply.aspx" />
+                                            </asp:MenuItem>
+                                            <asp:MenuItem meta:resourcekey="MenuItem2000" Value="Folder" ToolTip="MAA" Selectable="false">
+                                                <asp:MenuItem meta:resourcekey="MenuItem2101" Value="销售部方案申请" NavigateUrl="FormSale/SaleApplyFirst.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem2102" Value="销售部方案结案" NavigateUrl="FormSale/SaleApplySelectListForPO.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem2103" Value="销售部方案结案" NavigateUrl="FormSale/SaleApplySelectList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem2104" Value="销售部方案报销" NavigateUrl="FormSale/SaleApplySelectListForAdvanced.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem2105" Value="销售部方案报销" NavigateUrl="FormSale/SaleSettlementSelectList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem2106" Value="市场部方案申请" NavigateUrl="FormMarketing/MarketingApplyFirst.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem2109" Value="市场部方案申请" NavigateUrl="SampleRequest/MarketingApplyFirst.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem2107" Value="市场部方案报销" NavigateUrl="FormMarketing/MarketingPaymentSelect.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem2108" Value="市场部方案报销" NavigateUrl="FormMarketing/MarketingPaymentSelectForPO.aspx" />
+                                            </asp:MenuItem>
+                                            <asp:MenuItem meta:resourcekey="MenuItem3000" Value="Folder" Selectable="false">
+                                                <asp:MenuItem meta:resourcekey="MenuItem3101" Value="PR申请" NavigateUrl="FormPurchase/PRApplyFirst.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem3102" Value="PO申请" NavigateUrl="FormPurchase/PRSelectList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem3103" Value="PV申请" NavigateUrl="FormPurchase/PRPOSelectList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem3104" Value="PV申请" NavigateUrl="FormPurchase/PVSpecialApplyFirst.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem4101" Value="供应商维护" NavigateUrl="FormPurchase/VendorManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem4102" Value="供应商申请" NavigateUrl="FormPurchase/FormVendorApply.aspx" />
+                                            </asp:MenuItem>
+                                            <asp:MenuItem meta:resourcekey="MenuItem5000" Value="Folder" Selectable="false">
+                                                <asp:MenuItem meta:resourcekey="MenuItem5101" Value="R&D方案申请" NavigateUrl="FormRD/RDApplyFirst.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem5104" Value="R&D方案申请" NavigateUrl="SampleRequest/RDApplyFirst.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem5102" Value="R&D方案报销" NavigateUrl="FormRD/RDPaymentSelect.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem5103" Value="R&D方案报销" NavigateUrl="FormRD/RDPaymentSelectForPO.aspx" />
+                                            </asp:MenuItem>
+                                            <asp:MenuItem meta:resourcekey="MenuItem6000" Value="Folder" Selectable="false">
+                                                <%--<asp:MenuItem meta:resourcekey="MenuItem6101" Value="管理费用预算" NavigateUrl="BudgetManage/BudgetManageFee.aspx" />--%>
+                                                <asp:MenuItem meta:resourcekey="MenuItem6102" Value="销售部费用预算(MAA)" NavigateUrl="BudgetManage/BudgetSaleFee.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem6103" Value="市场部费用预算(MAA)" NavigateUrl="BudgetManage/BudgetMarketingFee.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem6104" Value="采购费用预算" NavigateUrl="BudgetManage/BudgetPurchaseFee.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem6105" Value="R&D费用预算" NavigateUrl="BudgetManage/BudgetRDFee.aspx" />
+                                            </asp:MenuItem>
+                                            <asp:MenuItem meta:resourcekey="MenuItem7000" Value="Folder" Selectable="false">
+                                                <asp:MenuItem meta:resourcekey="MenuItem7101" Value="个人费用报销查询" NavigateUrl="FormQuery/FormPersonalPaymentList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7102" Value="销售部方案申请查询" NavigateUrl="FormQuery/SaleApplyList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7103" Value="销售部方案结案查询" NavigateUrl="FormQuery/SaleSettlementList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7104" Value="销售部方案报销查询" NavigateUrl="FormQuery/SalePaymentList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7105" Value="市场部方案申请查询" NavigateUrl="FormQuery/MarketingApplyList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7106" Value="市场部方案报销查询" NavigateUrl="FormQuery/MarketingPaymentList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7107" Value="RD申请查询" NavigateUrl="FormQuery/RDApplyList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7108" Value="RD报销查询" NavigateUrl="FormQuery/RDPaymentList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7110" Value="PR查询" NavigateUrl="FormQuery/PRList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7111" Value="PO查询" NavigateUrl="FormQuery/POList.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7112" Value="PV查询" NavigateUrl="FormQuery/PVList.aspx" />
+                                            </asp:MenuItem>
+                                            <asp:MenuItem meta:resourcekey="MenuItem8000" Value="Folder" Selectable="false">
+                                                <asp:MenuItem meta:resourcekey="MenuItem8101" Value="Folder" Selectable="false">
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8102" Value="物资大类" NavigateUrl="BaseData/ItemCategory.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8103" Value="物资" NavigateUrl="BaseData/Item.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8104" Value="运输方式" NavigateUrl="BaseData/ShippingTerm.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8105" Value="供应商类型" NavigateUrl="BaseData/VendorType.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8106" Value="采购预算类型" NavigateUrl="BaseData/PurchaseBudgetType.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8107" Value="采购类型" NavigateUrl="BaseData/PurchaseType.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8108" Value="公司" NavigateUrl="BaseData/Company.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8109" Value="ACType" NavigateUrl="BaseData/ACType.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8110" Value="BankCode" NavigateUrl="BaseData/BankCode.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8111" Value="MethodPayment" NavigateUrl="BaseData/MethodPayment.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8112" Value="PaymentTerm" NavigateUrl="BaseData/PaymentTerm.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8113" Value="TransType" NavigateUrl="BaseData/TransType.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8114" Value="VatType" NavigateUrl="BaseData/VatType.aspx" />
+                                                </asp:MenuItem>
+                                                <asp:MenuItem meta:resourcekey="MenuItem8201" Value="Folder" Selectable="false">
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8202" Value="客户类型" NavigateUrl="BaseData/CustomerType.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8203" Value="渠道" NavigateUrl="BaseData/CustomerChannel.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8204" Value="客户区域" NavigateUrl="BaseData/CustomerRegion.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8205" Value="客户" NavigateUrl="BaseData/Customer.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8206" Value="品牌" NavigateUrl="BaseData/Brand.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8207" Value="产品系列" NavigateUrl="BaseData/SKUCategory.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8208" Value="产品种类" NavigateUrl="BaseData/SKUType.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8209" Value="产品" NavigateUrl="BaseData/SKU.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8210" Value="市场部方案" NavigateUrl="BaseData/MarketingProject.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8211" Value="陈列形式" NavigateUrl="BaseData/DisplayType.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem8212" Value="折扣形式" NavigateUrl="BaseData/DiscountType.aspx" />
+                                                </asp:MenuItem>
+                                                <%--<asp:MenuItem meta:resourcekey="MenuItem4000" Value="Folder" Selectable="false">
+                                                    <asp:MenuItem meta:resourcekey="MenuItem4101" Value="供应商维护" NavigateUrl="~/FormPurchase/VendorManage.aspx" />
+                                                    <asp:MenuItem meta:resourcekey="MenuItem4102" Value="供应商申请" NavigateUrl="FormPurchase/FormVendorApply.aspx" />
+                                                </asp:MenuItem>--%>
+                                            </asp:MenuItem>
+                                            <asp:MenuItem meta:resourcekey="MenuItem9000" Value="Folder" Selectable="false">
+                                                <asp:MenuItem meta:resourcekey="MenuItem9101" ToolTip="币种" Value="币种" NavigateUrl="BaseData/Currency.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem9102" Value="费用类别(MAA)" NavigateUrl="BaseData/ExpenseCategory.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem9103" Value="费用项(MAA)" NavigateUrl="BaseData/ExpenseItem.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem9104" Value="管理费用类型" NavigateUrl="BaseData/ManageExpenseCategoy.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem9105" Value="销售及市场费用期间" NavigateUrl="BaseData/PeriodSale.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem9106" Value="采购费用期间" NavigateUrl="BaseData/PeriodPurchase.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem9107" Value="个人报销费用期间" NavigateUrl="BaseData/PeriodReimburse.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem9108" Value="城市及城市类型" NavigateUrl="BaseData/City.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem9109" Value="费用标准管理" NavigateUrl="BaseData/CostLimit.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem9110" Value="审批拒绝原因" NavigateUrl="BaseData/RejectReason.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem9111" Value="成本中心" NavigateUrl="BaseData/CostCenter.aspx" />
+                                                <%--<asp:MenuItem meta:resourcekey="MenuItem9112" Value="G\L Account" NavigateUrl="BaseData/GLAccount.aspx"/>--%>
+                                                <asp:MenuItem meta:resourcekey="MenuItem9113" Value="发票状态" NavigateUrl="BaseData/InvoiceStatus.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem8213" Value="支付方式" NavigateUrl="BaseData/PaymentType.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem2110" Value="销售报销信息导入" NavigateUrl="Import/ImportSettlementPayment.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS116" Value="发货信息导入" NavigateUrl="~/AuthorizationManage/FormDeliveryGoodsExport.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItem7113" Value="数据导出查询" NavigateUrl="FormQuery/FormPaymentList.aspx" />
+                                            </asp:MenuItem>
+                                            <asp:MenuItem meta:resourcekey="MenuItemR000" Value="Folder" Selectable="false">
+                                                <%--<asp:MenuItem meta:resourcekey="MenuItemR101" Value="销售报销明细报表" NavigateUrl="~/Reports/SaleReimburseDetailReport.aspx" />--%>
+                                                <asp:MenuItem meta:resourcekey="MenuItemR102" Value="销售MAA报告1" NavigateUrl="~/Reports/ReportHQ_ByExpenseType.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR103" Value="销售MAA报告2" NavigateUrl="~/Reports/ReportHQ_ByRegionbyCity.aspx" />
+                                                <%--<asp:MenuItem meta:resourcekey="MenuItemR104" Value="销售MAA报告3" NavigateUrl="~/Reports/ReportRegion_ByExpenseType.aspx" />                              
+                                                <asp:MenuItem meta:resourcekey="MenuItemR106" Value="PR/PO" NavigateUrl="~/Reports/FormPRPOReport.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR107" Value="PV" NavigateUrl="~/Reports/FormPVReport.aspx" />--%>
+                                                <asp:MenuItem meta:resourcekey="MenuItemR108" Value="个人费用报表" NavigateUrl="~/Reports/ReportTEBudget.aspx" />
+                                                <%--<asp:MenuItem meta:resourcekey="MenuItemR109" Value="RD/MAA报表" NavigateUrl="~/Reports/RDMAAReport.aspx" />--%>
+                                                <asp:MenuItem meta:resourcekey="MenuItemR110" Value="个人费用报表" NavigateUrl="~/Reports/ReportTExpenseSummary.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR111" Value="P&L报表" NavigateUrl="~/Reports/ReportPL.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR112" Value="市场明细报表" NavigateUrl="~/Reports/MarketingApplyDetail.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR113" Value="RD明细报表" NavigateUrl="~/Reports/RDApplyDetail.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR114" Value="销售明细报表" NavigateUrl="~/Reports/SaleApplyDetail.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR115" Value="MAAPayment报表" NavigateUrl="~/Reports/ReportMAApayment.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR116" Value="MAAging报表" NavigateUrl="~/Reports/ReportMAAging.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR118" Value="已支付PV报表" NavigateUrl="~/Reports/FormPVPaidReport.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR119" Value="PV统计报表" NavigateUrl="~/Reports/FormPVStatisticsReport.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR120" Value="延期支付PV报表" NavigateUrl="~/Reports/FormPVDelayReport.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemR105" Value="vendor" NavigateUrl="~/Reports/VendorReport.aspx" />
+                                            </asp:MenuItem>
+                                            <asp:MenuItem meta:resourcekey="MenuItemS000" Value="Folder" Selectable="false">
+                                                <asp:MenuItem meta:resourcekey="MenuItemS101" Value="组织结构设定" NavigateUrl="~/AuthorizationManage/OrganizationManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS102" Value="用户设定" NavigateUrl="~/AuthorizationManage/StuffUserManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS103" Value="用户设定" NavigateUrl="~/AuthorizationManage/PositionManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS104" Value="系统角色管理" NavigateUrl="~/AuthorizationManage/SystemRoleManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS105" Value="职务权限设置" NavigateUrl="~/AuthorizationManage/PositionRightManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS106" Value="职务业务范围设置" NavigateUrl="~/AuthorizationManage/OperateScopeManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS107" Value="职位级别管理" NavigateUrl="~/AuthorizationManage/StaffLevelManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS115" Value="用户区域设置" NavigateUrl="~/BaseData/UserAndRegion.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS108" Value="系统公告" NavigateUrl="~/BaseData/Announcement.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS109" Value="业务操作代理设置" NavigateUrl="~/AuthorizationManage/ProxyReimburse.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS110" Value="代理填单设置" NavigateUrl="~/AuthorizationManage/ProxyBusiness.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS111" Value="流程角色管理" NavigateUrl="~/AuthorizationManage/PositionTypeManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS112" Value="流程管理" NavigateUrl="~/AuthorizationManage/FlowParticipantManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS113" Value="数据导入日志" NavigateUrl="~/AuthorizationManage/ImportLogManage.aspx" />
+                                                <asp:MenuItem meta:resourcekey="MenuItemS114" Value="数据导出日志" NavigateUrl="~/AuthorizationManage/ExportLogManage.aspx" />
+                                            </asp:MenuItem>
+                                            <asp:MenuItem meta:resourcekey="MenuItemP000" Value="open" NavigateUrl="AuthorizationManage/MyInfoManage.aspx">
+                                            </asp:MenuItem>
+                                        </Items>
+                                    </asp:Menu>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--end-->
+                <div style="width: 1250px; margin-left: auto; margin-right: auto; background-color: #ffffff">
+                    <table id="tbCurrentPage" runat="server" width="1250px" border="0" align="center"
+                        cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td align="left" valign="middle" style="width: 80%; height: 31px; background-color: #FFFFFF;"
+                                class="tdborder05">
+                                &nbsp;
+                                <asp:Label ID="ContentTitleLabel" Style="font-size: 13px; color: #000;" runat="server"
+                                    Text=""></asp:Label>
+                            </td>
+                            <td align="center" valign="middle" style="height: 31px; width: 10%; background: #FFFFFF;"
+                                class="tdborder05">
+                                <asp:HyperLink ID="HomeLinkCtl" runat="server" NavigateUrl="~/Home.aspx" Text='<%$Resources:Common,Button_Home %>'></asp:HyperLink>&nbsp&nbsp
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="min-height: 500px; width: 1240px; margin-left: 5px;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div>
+                    <asp:UpdatePanel ID="ModelDlgUpdatePanel" UpdateMode="Conditional" runat="server">
+                        <ContentTemplate>
+                            <div id="ModelDlg" style="display: none;" runat="server">
+                                <div class="ModelDlgBackGround">
+                                </div>
+                                <div class="ModelDlgArea">
+                                    <div class="ModelDlgWindow" style="height: 300px; width: 300px;">
+                                        <div class="ModelDlgTitle">
+                                            <asp:Label ID="Label_Title" runat="server" meta:resourcekey="Label_Title" />
+                                        </div>
+                                        <div class="ModelDlgContent">
+                                            <asp:Literal Mode="PassThrough" ID="ModelDlgContentLiteral" runat="server"></asp:Literal>
+                                        </div>
+                                        <div class="ModelDlgCmd">
+                                            <asp:Button ID="ModelDlgCloseBtn" meta:resourcekey="Button_Close" runat="server"
+                                                OnClick="ModelDlgCloseBtn_Click" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

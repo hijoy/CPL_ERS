@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Label_AccountNo.Text" xml:space="preserve">
+    <value>银行账号</value>
+  </data>
+  <data name="Label_ActionType.Text" xml:space="preserve">
+    <value>操作类型</value>
+  </data>
+  <data name="Label_ACType.Text" xml:space="preserve">
+    <value>AC 类型</value>
+  </data>
+  <data name="Label_BankCode.Text" xml:space="preserve">
+    <value>银行代码</value>
+  </data>
+  <data name="Label_BankName.Text" xml:space="preserve">
+    <value>银行名称</value>
+  </data>
+  <data name="Label_CerExpirationDate.Text" xml:space="preserve">
+    <value>Cer Expiration Date</value>
+  </data>
+  <data name="Label_Company.Text" xml:space="preserve">
+    <value>公司名称</value>
+  </data>
+  <data name="Label_ContactName.Text" xml:space="preserve">
+    <value>联系人</value>
+  </data>
+  <data name="Label_Email.Text" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="Label_ExemptionCertNo.Text" xml:space="preserve">
+    <value>Exemption Cert No</value>
+  </data>
+  <data name="Label_GLAccount.Text" xml:space="preserve">
+    <value>GLAccount</value>
+  </data>
+  <data name="Label_HoldVendor.Text" xml:space="preserve">
+    <value>锁定供应商</value>
+  </data>
+  <data name="Label_ModifyReason.Text" xml:space="preserve">
+    <value>修改原因</value>
+  </data>
+  <data name="Label_OneTimeVendor.Text" xml:space="preserve">
+    <value>一次性供应商</value>
+  </data>
+  <data name="Label_PhoneNumber.Text" xml:space="preserve">
+    <value>电话号码</value>
+  </data>
+  <data name="Label_Postal.Text" xml:space="preserve">
+    <value>国家/地区</value>
+  </data>
+  <data name="Label_PurchasePhoneNumber.Text" xml:space="preserve">
+    <value>采购电话号码</value>
+  </data>
+  <data name="Label_PurchasingAddress.Text" xml:space="preserve">
+    <value>采购地址</value>
+  </data>
+  <data name="Label_PurchasingCity.Text" xml:space="preserve">
+    <value>采购城市</value>
+  </data>
+  <data name="Label_TaxExemptionMax.Text" xml:space="preserve">
+    <value>Tax Exemption Max</value>
+  </data>
+  <data name="Label_TaxExemptNo.Text" xml:space="preserve">
+    <value>Tax Exempt No</value>
+  </data>
+  <data name="Label_TaxID.Text" xml:space="preserve">
+    <value>税号</value>
+  </data>
+  <data name="Label_Title.Text" xml:space="preserve">
+    <value>供应商基本信息</value>
+  </data>
+  <data name="Label_Title1.Text" xml:space="preserve">
+    <value>相关财务信息</value>
+  </data>
+  <data name="Label_TransType.Text" xml:space="preserve">
+    <value>汇款类型</value>
+  </data>
+  <data name="Label_VATRate.Text" xml:space="preserve">
+    <value>VAT税率</value>
+  </data>
+  <data name="Label_VendorAddress.Text" xml:space="preserve">
+    <value>供应商地址</value>
+  </data>
+  <data name="Label_VendorCode.Text" xml:space="preserve">
+    <value>供应商编码</value>
+  </data>
+  <data name="Label_VendorType.Text" xml:space="preserve">
+    <value>供应商类型</value>
+  </data>
+  <data name="Lable_AlphaSearchKey.Text" xml:space="preserve">
+    <value>搜索字符</value>
+  </data>
+  <data name="Lable_PurchaseingPostalCode.Text" xml:space="preserve">
+    <value>采购邮政编码</value>
+  </data>
+  <data name="Lable_PurchasingContact.Text" xml:space="preserve">
+    <value>采购联系人</value>
+  </data>
+  <data name="titleLabel.Text" xml:space="preserve">
+    <value>供应商申请审批</value>
+  </data>
+  <data name="Label_BankNo.Text" xml:space="preserve">
+    <value>银行行号</value>
+  </data>
+  <data name="Button_SaveVendorType.Text" xml:space="preserve">
+    <value>保存供应商类型</value>
+  </data>
+</root>

@@ -1,0 +1,28 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DialogMasterPage.master.cs"
+    Inherits="DialogMasterPage" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <base target="_self" />
+    <link id="Link1" href="~/css/css.css" rel="stylesheet" type="text/css" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="DialogBoder1">
+        <div class="DialogBoder2">
+            <div class="DialogDiv1">
+                <asp:ContentPlaceHolder ID="cphTop" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <p>
+            </p>
+            <div id="DialogDiv2" runat="server" class="DialogDiv2">
+                <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

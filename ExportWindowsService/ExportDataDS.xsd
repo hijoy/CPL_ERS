@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ExportDataDS" targetNamespace="http://tempuri.org/ExportData.xsd" xmlns:mstns="http://tempuri.org/ExportData.xsd" xmlns="http://tempuri.org/ExportData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ExportDataDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ExportDataDS" msprop:Generator_UserDSName="ExportDataDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ExportData" msprop:Generator_TableClassName="ExportDataDataTable" msprop:Generator_TableVarName="tableExportData" msprop:Generator_TablePropName="ExportData" msprop:Generator_RowDeletingName="ExportDataRowDeleting" msprop:Generator_UserTableName="ExportData" msprop:Generator_RowChangingName="ExportDataRowChanging" msprop:Generator_RowEvHandlerName="ExportDataRowChangeEventHandler" msprop:Generator_RowDeletedName="ExportDataRowDeleted" msprop:Generator_RowEvArgName="ExportDataRowChangeEvent" msprop:Generator_RowChangedName="ExportDataRowChanged" msprop:Generator_RowClassName="ExportDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CompanyCode" msprop:Generator_ColumnVarNameInTable="columnCompanyCode" msprop:Generator_ColumnPropNameInRow="CompanyCode" msprop:Generator_ColumnPropNameInTable="CompanyCodeColumn" msprop:Generator_UserColumnName="CompanyCode" type="xs:string" minOccurs="0" />
+              <xs:element name="VendorCode" msprop:Generator_ColumnVarNameInTable="columnVendorCode" msprop:Generator_ColumnPropNameInRow="VendorCode" msprop:Generator_ColumnPropNameInTable="VendorCodeColumn" msprop:Generator_UserColumnName="VendorCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Reference" msprop:Generator_ColumnVarNameInTable="columnReference" msprop:Generator_ColumnPropNameInRow="Reference" msprop:Generator_ColumnPropNameInTable="ReferenceColumn" msprop:Generator_UserColumnName="Reference" type="xs:string" minOccurs="0" />
+              <xs:element name="Invoice" msprop:Generator_ColumnVarNameInTable="columnInvoice" msprop:Generator_ColumnPropNameInRow="Invoice" msprop:Generator_ColumnPropNameInTable="InvoiceColumn" msprop:Generator_UserColumnName="Invoice" type="xs:string" minOccurs="0" />
+              <xs:element name="Invoicedate" msprop:Generator_ColumnVarNameInTable="columnInvoicedate" msprop:Generator_ColumnPropNameInRow="Invoicedate" msprop:Generator_ColumnPropNameInTable="InvoicedateColumn" msprop:Generator_UserColumnName="Invoicedate" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalMoney" msprop:Generator_ColumnVarNameInTable="columnTotalMoney" msprop:Generator_ColumnPropNameInRow="TotalMoney" msprop:Generator_ColumnPropNameInTable="TotalMoneyColumn" msprop:Generator_UserColumnName="TotalMoney" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Currency" msprop:Generator_ColumnVarNameInTable="columnCurrency" msprop:Generator_ColumnPropNameInRow="Currency" msprop:Generator_ColumnPropNameInTable="CurrencyColumn" msprop:Generator_UserColumnName="Currency" type="xs:string" minOccurs="0" />
+              <xs:element name="ExchangeRate" msprop:Generator_ColumnVarNameInTable="columnExchangeRate" msprop:Generator_ColumnPropNameInRow="ExchangeRate" msprop:Generator_ColumnPropNameInTable="ExchangeRateColumn" msprop:Generator_UserColumnName="ExchangeRate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ManageExpenseItem" msprop:Generator_ColumnVarNameInTable="columnManageExpenseItem" msprop:Generator_ColumnPropNameInRow="ManageExpenseItem" msprop:Generator_ColumnPropNameInTable="ManageExpenseItemColumn" msprop:Generator_UserColumnName="ManageExpenseItem" type="xs:string" minOccurs="0" />
+              <xs:element name="CostCenter" msprop:Generator_ColumnVarNameInTable="columnCostCenter" msprop:Generator_ColumnPropNameInRow="CostCenter" msprop:Generator_ColumnPropNameInTable="CostCenterColumn" msprop:Generator_UserColumnName="CostCenter" type="xs:string" minOccurs="0" />
+              <xs:element name="AccountCode" msprop:Generator_ColumnVarNameInTable="columnAccountCode" msprop:Generator_ColumnPropNameInRow="AccountCode" msprop:Generator_ColumnPropNameInTable="AccountCodeColumn" msprop:Generator_UserColumnName="AccountCode" type="xs:string" minOccurs="0" />
+              <xs:element name="DetailMoney" msprop:Generator_ColumnVarNameInTable="columnDetailMoney" msprop:Generator_ColumnPropNameInRow="DetailMoney" msprop:Generator_ColumnPropNameInTable="DetailMoneyColumn" msprop:Generator_UserColumnName="DetailMoney" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PONumber" msprop:Generator_ColumnVarNameInTable="columnPONumber" msprop:Generator_ColumnPropNameInRow="PONumber" msprop:Generator_ColumnPropNameInTable="PONumberColumn" msprop:Generator_UserColumnName="PONumber" type="xs:decimal" minOccurs="0" />
+              <xs:element name="FinanceRemark" msprop:Generator_ColumnVarNameInTable="columnFinanceRemark" msprop:Generator_ColumnPropNameInRow="FinanceRemark" msprop:Generator_ColumnPropNameInTable="FinanceRemarkColumn" msprop:Generator_UserColumnName="FinanceRemark" type="xs:string" minOccurs="0" />
+              <xs:element name="POLineNumber" msprop:Generator_ColumnVarNameInTable="columnPOLineNumber" msprop:Generator_ColumnPropNameInRow="POLineNumber" msprop:Generator_ColumnPropNameInTable="POLineNumberColumn" msprop:Generator_UserColumnName="POLineNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="FormNo" msprop:Generator_ColumnVarNameInTable="columnFormNo" msprop:Generator_ColumnPropNameInRow="FormNo" msprop:Generator_ColumnPropNameInTable="FormNoColumn" msprop:Generator_UserColumnName="FormNo" type="xs:string" minOccurs="0" />
+              <xs:element name="FormID" msprop:Generator_ColumnVarNameInTable="columnFormID" msprop:Generator_ColumnPropNameInRow="FormID" msprop:Generator_ColumnPropNameInTable="FormIDColumn" msprop:Generator_UserColumnName="FormID" type="xs:int" minOccurs="0" />
+              <xs:element name="BatchNo" msprop:Generator_ColumnVarNameInTable="columnBatchNo" msprop:Generator_ColumnPropNameInRow="BatchNo" msprop:Generator_ColumnPropNameInTable="BatchNoColumn" msprop:Generator_UserColumnName="BatchNo" type="xs:string" minOccurs="0" />
+              <xs:element name="TaxAmt" msprop:Generator_ColumnVarNameInTable="columnTaxAmt" msprop:Generator_ColumnPropNameInRow="TaxAmt" msprop:Generator_ColumnPropNameInTable="TaxAmtColumn" msprop:Generator_UserColumnName="TaxAmt" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TaxRateCode" msprop:Generator_ColumnVarNameInTable="columnTaxRateCode" msprop:Generator_ColumnPropNameInRow="TaxRateCode" msprop:Generator_ColumnPropNameInTable="TaxRateCodeColumn" msprop:Generator_UserColumnName="TaxRateCode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="ExportDataKey1">
+      <xs:selector xpath=".//mstns:ExportData" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

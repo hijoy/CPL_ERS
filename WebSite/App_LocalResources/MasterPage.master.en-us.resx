@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Button_Close.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Label_Title.Text" xml:space="preserve">
+    <value>System Message</value>
+  </data>
+  <data name="MenuItem1000.Text" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="MenuItem1101.Text" xml:space="preserve">
+    <value>Claim Application for Travel Expense</value>
+  </data>
+  <data name="MenuItem1102.Text" xml:space="preserve">
+    <value>Entertainment Expense Application</value>
+  </data>
+  <data name="MenuItem1103.Text" xml:space="preserve">
+    <value>临时招待费报销申请</value>
+  </data>
+  <data name="MenuItem1104.Text" xml:space="preserve">
+    <value>Common Entertainment Expense Claim Application</value>
+  </data>
+  <data name="MenuItem1105.Text" xml:space="preserve">
+    <value>Personal Reimburse Application</value>
+  </data>
+  <data name="MenuItem2000.Text" xml:space="preserve">
+    <value>MAA</value>
+  </data>
+  <data name="MenuItem2101.Text" xml:space="preserve">
+    <value>Program Application of Sales Dept.</value>
+  </data>
+  <data name="MenuItem2102.Text" xml:space="preserve">
+    <value>Program PO of Sales Dept.</value>
+  </data>
+  <data name="MenuItem2103.Text" xml:space="preserve">
+    <value>Program Settlement of Sales Dept.</value>
+  </data>
+  <data name="MenuItem2104.Text" xml:space="preserve">
+    <value>Pre-Payment Application of Sales Dept.</value>
+  </data>
+  <data name="MenuItem2105.Text" xml:space="preserve">
+    <value>Payment Application of Sales Dept.</value>
+  </data>
+  <data name="MenuItem2106.Text" xml:space="preserve">
+    <value>Program Application of Marketing Dept.</value>
+  </data>
+  <data name="MenuItem2107.Text" xml:space="preserve">
+    <value>Program Claim Application of Marketing Dept.</value>
+  </data>
+  <data name="MenuItem2108.Text" xml:space="preserve">
+    <value>Program PO of Marketing Dept.</value>
+  </data>
+  <data name="MenuItem2109.Text" xml:space="preserve">
+    <value>Sample Request of Marketing Dept.</value>
+  </data>
+  <data name="MenuItem2110.Text" xml:space="preserve">
+    <value>Payment Information Import</value>
+  </data>
+  <data name="MenuItem3000.Text" xml:space="preserve">
+    <value>Purchase</value>
+  </data>
+  <data name="MenuItem3101.Text" xml:space="preserve">
+    <value>PR Application</value>
+  </data>
+  <data name="MenuItem3102.Text" xml:space="preserve">
+    <value>PO Application</value>
+  </data>
+  <data name="MenuItem3103.Text" xml:space="preserve">
+    <value>PV Application</value>
+  </data>
+  <data name="MenuItem3104.Text" xml:space="preserve">
+    <value>Special PV Application</value>
+  </data>
+  <data name="MenuItem4000.Text" xml:space="preserve">
+    <value>Vendor</value>
+  </data>
+  <data name="MenuItem4101.Text" xml:space="preserve">
+    <value>Vendor Management</value>
+  </data>
+  <data name="MenuItem4102.Text" xml:space="preserve">
+    <value>Vendor Application</value>
+  </data>
+  <data name="MenuItem5000.Text" xml:space="preserve">
+    <value>R&amp;D</value>
+  </data>
+  <data name="MenuItem5101.Text" xml:space="preserve">
+    <value>Program Application of R&amp;D</value>
+  </data>
+  <data name="MenuItem5102.Text" xml:space="preserve">
+    <value>Program Claim of R&amp;D</value>
+  </data>
+  <data name="MenuItem5103.Text" xml:space="preserve">
+    <value>Program PO of R&amp;D</value>
+  </data>
+  <data name="MenuItem5104.Text" xml:space="preserve">
+    <value>Sample Request of R&amp;D</value>
+  </data>
+  <data name="MenuItem6000.Text" xml:space="preserve">
+    <value>Budget</value>
+  </data>
+  <data name="MenuItem6101.Text" xml:space="preserve">
+    <value>Management Expense Budget</value>
+  </data>
+  <data name="MenuItem6102.Text" xml:space="preserve">
+    <value>Expense Budget of Sales Dept.</value>
+  </data>
+  <data name="MenuItem6103.Text" xml:space="preserve">
+    <value>Expense Budget of Marketing Dept.</value>
+  </data>
+  <data name="MenuItem6104.Text" xml:space="preserve">
+    <value>Purchase Expense Budget</value>
+  </data>
+  <data name="MenuItem6105.Text" xml:space="preserve">
+    <value>R&amp;D Expense Budget</value>
+  </data>
+  <data name="MenuItem7000.Text" xml:space="preserve">
+    <value>Document Search</value>
+  </data>
+  <data name="MenuItem7101.Text" xml:space="preserve">
+    <value>Personal Reimburse Search</value>
+  </data>
+  <data name="MenuItem7102.Text" xml:space="preserve">
+    <value>Program Application Document of Sales Dept. Search</value>
+  </data>
+  <data name="MenuItem7103.Text" xml:space="preserve">
+    <value>Program Settlement Document of Sales Dept. Search</value>
+  </data>
+  <data name="MenuItem7104.Text" xml:space="preserve">
+    <value>Program Claim Document of Sales Dept. Search</value>
+  </data>
+  <data name="MenuItem7105.Text" xml:space="preserve">
+    <value>Program Application Document of Marketing Dept. Search</value>
+  </data>
+  <data name="MenuItem7106.Text" xml:space="preserve">
+    <value>Program Claim Document of Marketing Dept. Search</value>
+  </data>
+  <data name="MenuItem7107.Text" xml:space="preserve">
+    <value>R&amp;D Application Document Search</value>
+  </data>
+  <data name="MenuItem7108.Text" xml:space="preserve">
+    <value>R&amp;D Claim Document Search</value>
+  </data>
+  <data name="MenuItem7109.Text" xml:space="preserve">
+    <value>Vendor Application Document Search</value>
+  </data>
+  <data name="MenuItem7110.Text" xml:space="preserve">
+    <value>Purcahse Request Search</value>
+  </data>
+  <data name="MenuItem7111.Text" xml:space="preserve">
+    <value>Purcahse Order Search</value>
+  </data>
+  <data name="MenuItem7112.Text" xml:space="preserve">
+    <value>Payment Voucher Search</value>
+  </data>
+  <data name="MenuItem7113.Text" xml:space="preserve">
+    <value>Data Export List</value>
+  </data>
+  <data name="MenuItem8000.Text" xml:space="preserve">
+    <value>Master Data</value>
+  </data>
+  <data name="MenuItem8101.Text" xml:space="preserve">
+    <value>Purchasing Module</value>
+  </data>
+  <data name="MenuItem8102.Text" xml:space="preserve">
+    <value>Item Category</value>
+  </data>
+  <data name="MenuItem8103.Text" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="MenuItem8104.Text" xml:space="preserve">
+    <value>Shipping Terms</value>
+  </data>
+  <data name="MenuItem8105.Text" xml:space="preserve">
+    <value>Vendor Type</value>
+  </data>
+  <data name="MenuItem8106.Text" xml:space="preserve">
+    <value>Purchasing Budget Type</value>
+  </data>
+  <data name="MenuItem8107.Text" xml:space="preserve">
+    <value>Purchasing Type</value>
+  </data>
+  <data name="MenuItem8108.Text" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="MenuItem8109.Text" xml:space="preserve">
+    <value>A/C Type</value>
+  </data>
+  <data name="MenuItem8110.Text" xml:space="preserve">
+    <value>Bank Code</value>
+  </data>
+  <data name="MenuItem8111.Text" xml:space="preserve">
+    <value>Method of Payment</value>
+  </data>
+  <data name="MenuItem8112.Text" xml:space="preserve">
+    <value>Payment Term</value>
+  </data>
+  <data name="MenuItem8113.Text" xml:space="preserve">
+    <value>Trans Type</value>
+  </data>
+  <data name="MenuItem8114.Text" xml:space="preserve">
+    <value>Vat Rate</value>
+  </data>
+  <data name="MenuItem8201.Text" xml:space="preserve">
+    <value>MAA Master Data</value>
+  </data>
+  <data name="MenuItem8202.Text" xml:space="preserve">
+    <value>Customer Type</value>
+  </data>
+  <data name="MenuItem8203.Text" xml:space="preserve">
+    <value>Channel</value>
+  </data>
+  <data name="MenuItem8204.Text" xml:space="preserve">
+    <value>Customer Region</value>
+  </data>
+  <data name="MenuItem8205.Text" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="MenuItem8206.Text" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="MenuItem8207.Text" xml:space="preserve">
+    <value>Product Category</value>
+  </data>
+  <data name="MenuItem8208.Text" xml:space="preserve">
+    <value>Product Type</value>
+  </data>
+  <data name="MenuItem8209.Text" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="MenuItem8210.Text" xml:space="preserve">
+    <value>Marketing Program</value>
+  </data>
+  <data name="MenuItem8211.Text" xml:space="preserve">
+    <value>Display Form</value>
+  </data>
+  <data name="MenuItem8212.Text" xml:space="preserve">
+    <value>Discount Form</value>
+  </data>
+  <data name="MenuItem8213.Text" xml:space="preserve">
+    <value>Payment Type</value>
+  </data>
+  <data name="MenuItem9000.Text" xml:space="preserve">
+    <value>FI Operation</value>
+  </data>
+  <data name="MenuItem9101.Text" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="MenuItem9102.Text" xml:space="preserve">
+    <value>Expense Category(MMA)</value>
+  </data>
+  <data name="MenuItem9103.Text" xml:space="preserve">
+    <value>Expense Type(MAA)</value>
+  </data>
+  <data name="MenuItem9104.Text" xml:space="preserve">
+    <value>General Expense Type</value>
+  </data>
+  <data name="MenuItem9105.Text" xml:space="preserve">
+    <value>Period(MAA)</value>
+  </data>
+  <data name="MenuItem9106.Text" xml:space="preserve">
+    <value>Period(Purchasing)</value>
+  </data>
+  <data name="MenuItem9107.Text" xml:space="preserve">
+    <value>Period(T&amp;E)</value>
+  </data>
+  <data name="MenuItem9108.Text" xml:space="preserve">
+    <value>City &amp; City Type</value>
+  </data>
+  <data name="MenuItem9109.Text" xml:space="preserve">
+    <value>Expense Standard</value>
+  </data>
+  <data name="MenuItem9110.Text" xml:space="preserve">
+    <value>Reason of Refuse</value>
+  </data>
+  <data name="MenuItem9111.Text" xml:space="preserve">
+    <value>Profit Center</value>
+  </data>
+  <data name="MenuItem9112.Text" xml:space="preserve">
+    <value>G\L Account</value>
+  </data>
+  <data name="MenuItem9113.Text" xml:space="preserve">
+    <value>Invoice Status</value>
+  </data>
+  <data name="MenuItemP000.Text" xml:space="preserve">
+    <value>Personal Info</value>
+  </data>
+  <data name="MenuItemR000.Text" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="MenuItemR101.Text" xml:space="preserve">
+    <value>Expense Detail List</value>
+  </data>
+  <data name="MenuItemR102.Text" xml:space="preserve">
+    <value>HQ-By Expense Type</value>
+  </data>
+  <data name="MenuItemR103.Text" xml:space="preserve">
+    <value>HQ-By Region by City</value>
+  </data>
+  <data name="MenuItemR104.Text" xml:space="preserve">
+    <value>Region-By Expense Type</value>
+  </data>
+  <data name="MenuItemR105.Text" xml:space="preserve">
+    <value>vendor</value>
+  </data>
+  <data name="MenuItemR106.Text" xml:space="preserve">
+    <value>PR/PO</value>
+  </data>
+  <data name="MenuItemR107.Text" xml:space="preserve">
+    <value>PV</value>
+  </data>
+  <data name="MenuItemR108.Text" xml:space="preserve">
+    <value>T&amp;E Report</value>
+  </data>
+  <data name="MenuItemR109.Text" xml:space="preserve">
+    <value>R&amp;D Expense Report</value>
+  </data>
+  <data name="MenuItemR110.Text" xml:space="preserve">
+    <value>Expense Summary Report</value>
+  </data>
+  <data name="MenuItemR111.Text" xml:space="preserve">
+    <value>P&amp;L Report</value>
+  </data>
+  <data name="MenuItemR112.Text" xml:space="preserve">
+    <value>MAA Marketing Dept. Detail Report</value>
+  </data>
+  <data name="MenuItemR113.Text" xml:space="preserve">
+    <value>MAA RD Detail Report</value>
+  </data>
+  <data name="MenuItemR114.Text" xml:space="preserve">
+    <value>MAA Sale Dept. Detail Report</value>
+  </data>
+  <data name="MenuItemR115.Text" xml:space="preserve">
+    <value>MAA payment Report</value>
+  </data>
+  <data name="MenuItemR116.Text" xml:space="preserve">
+    <value>MAA Aging Report</value>
+  </data>
+  <data name="MenuItemR118.Text" xml:space="preserve">
+    <value>Paid PV Report</value>
+  </data>
+  <data name="MenuItemR119.Text" xml:space="preserve">
+    <value>Statistics PV Report</value>
+  </data>
+  <data name="MenuItemR120.Text" xml:space="preserve">
+    <value>Delay PV Report</value>
+  </data>
+  <data name="MenuItemS000.Text" xml:space="preserve">
+    <value>System Management</value>
+  </data>
+  <data name="MenuItemS101.Text" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="MenuItemS102.Text" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="MenuItemS103.Text" xml:space="preserve">
+    <value>Position Setting</value>
+  </data>
+  <data name="MenuItemS104.Text" xml:space="preserve">
+    <value>System Role</value>
+  </data>
+  <data name="MenuItemS105.Text" xml:space="preserve">
+    <value>Position Permission</value>
+  </data>
+  <data name="MenuItemS106.Text" xml:space="preserve">
+    <value>Operation Scope</value>
+  </data>
+  <data name="MenuItemS107.Text" xml:space="preserve">
+    <value>Position Level</value>
+  </data>
+  <data name="MenuItemS108.Text" xml:space="preserve">
+    <value>Announcement</value>
+  </data>
+  <data name="MenuItemS109.Text" xml:space="preserve">
+    <value>Operation Proxy</value>
+  </data>
+  <data name="MenuItemS110.Text" xml:space="preserve">
+    <value>T&amp;E Application Proxy</value>
+  </data>
+  <data name="MenuItemS111.Text" xml:space="preserve">
+    <value>Workflow Role</value>
+  </data>
+  <data name="MenuItemS112.Text" xml:space="preserve">
+    <value>Workflow Management</value>
+  </data>
+  <data name="MenuItemS113.Text" xml:space="preserve">
+    <value>List Of Import Log</value>
+  </data>
+  <data name="MenuItemS114.Text" xml:space="preserve">
+    <value>List Of Export Log</value>
+  </data>
+  <data name="MenuItemS115.Text" xml:space="preserve">
+    <value>User And Region</value>
+  </data>
+  <data name="MenuItemS116.Text" xml:space="preserve">
+    <value>Delivery Goods Import</value>
+  </data>
+  <data name="titleLabel.Text" xml:space="preserve">
+    <value>Campbell Swire OA System</value>
+  </data>
+</root>

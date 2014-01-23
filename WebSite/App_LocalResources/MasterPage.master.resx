@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Button_Close.Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Label_Title.Text" xml:space="preserve">
+    <value>系统提示</value>
+  </data>
+  <data name="MenuItem1000.Text" xml:space="preserve">
+    <value>个人费用报销</value>
+  </data>
+  <data name="MenuItem1101.Text" xml:space="preserve">
+    <value>出差费用报销申请</value>
+  </data>
+  <data name="MenuItem1102.Text" xml:space="preserve">
+    <value>招待费申请</value>
+  </data>
+  <data name="MenuItem1103.Text" xml:space="preserve">
+    <value>临时招待费报销申请</value>
+  </data>
+  <data name="MenuItem1104.Text" xml:space="preserve">
+    <value>日常招待费报销申请</value>
+  </data>
+  <data name="MenuItem1105.Text" xml:space="preserve">
+    <value>个人费用报销申请</value>
+  </data>
+  <data name="MenuItem2000.Text" xml:space="preserve">
+    <value>MAA</value>
+  </data>
+  <data name="MenuItem2101.Text" xml:space="preserve">
+    <value>销售部方案申请</value>
+  </data>
+  <data name="MenuItem2102.Text" xml:space="preserve">
+    <value>销售部方案PO</value>
+  </data>
+  <data name="MenuItem2103.Text" xml:space="preserve">
+    <value>销售部方案结案</value>
+  </data>
+  <data name="MenuItem2104.Text" xml:space="preserve">
+    <value>销售部预付款申请</value>
+  </data>
+  <data name="MenuItem2105.Text" xml:space="preserve">
+    <value>销售部付款申请</value>
+  </data>
+  <data name="MenuItem2106.Text" xml:space="preserve">
+    <value>市场部方案申请</value>
+  </data>
+  <data name="MenuItem2107.Text" xml:space="preserve">
+    <value>市场部方案报销</value>
+  </data>
+  <data name="MenuItem2108.Text" xml:space="preserve">
+    <value>市场部方案PO</value>
+  </data>
+  <data name="MenuItem2109.Text" xml:space="preserve">
+    <value>市场部Sample申请</value>
+  </data>
+  <data name="MenuItem3000.Text" xml:space="preserve">
+    <value>采购</value>
+  </data>
+  <data name="MenuItem3101.Text" xml:space="preserve">
+    <value>PR申请</value>
+  </data>
+  <data name="MenuItem3102.Text" xml:space="preserve">
+    <value>PO申请</value>
+  </data>
+  <data name="MenuItem3103.Text" xml:space="preserve">
+    <value>PV申请</value>
+  </data>
+  <data name="MenuItem3104.Text" xml:space="preserve">
+    <value>特殊PV申请</value>
+  </data>
+  <data name="MenuItem4000.Text" xml:space="preserve">
+    <value>供应商</value>
+  </data>
+  <data name="MenuItem4101.Text" xml:space="preserve">
+    <value>供应商管理</value>
+  </data>
+  <data name="MenuItem4102.Text" xml:space="preserve">
+    <value>供应商申请</value>
+  </data>
+  <data name="MenuItem5000.Text" xml:space="preserve">
+    <value>R&amp;D</value>
+  </data>
+  <data name="MenuItem5101.Text" xml:space="preserve">
+    <value>R&amp;D方案申请</value>
+  </data>
+  <data name="MenuItem5102.Text" xml:space="preserve">
+    <value>R&amp;D方案报销</value>
+  </data>
+  <data name="MenuItem5103.Text" xml:space="preserve">
+    <value>R&amp;D方案PO</value>
+  </data>
+  <data name="MenuItem5104.Text" xml:space="preserve">
+    <value>R&amp;D Sample申请</value>
+  </data>
+  <data name="MenuItem6000.Text" xml:space="preserve">
+    <value>预算管理</value>
+  </data>
+  <data name="MenuItem6101.Text" xml:space="preserve">
+    <value>管理费用预算</value>
+  </data>
+  <data name="MenuItem6102.Text" xml:space="preserve">
+    <value>销售部费用预算</value>
+  </data>
+  <data name="MenuItem6103.Text" xml:space="preserve">
+    <value>市场部费用预算</value>
+  </data>
+  <data name="MenuItem6104.Text" xml:space="preserve">
+    <value>采购费用预算</value>
+  </data>
+  <data name="MenuItem6105.Text" xml:space="preserve">
+    <value>R&amp;D费用预算</value>
+  </data>
+  <data name="MenuItem7000.Text" xml:space="preserve">
+    <value>单据查询</value>
+  </data>
+  <data name="MenuItem7101.Text" xml:space="preserve">
+    <value>个人费用报销查询</value>
+  </data>
+  <data name="MenuItem7102.Text" xml:space="preserve">
+    <value>销售部方案申请单查询</value>
+  </data>
+  <data name="MenuItem7103.Text" xml:space="preserve">
+    <value>销售部方案结案单查询</value>
+  </data>
+  <data name="MenuItem7104.Text" xml:space="preserve">
+    <value>销售部方案报销单查询</value>
+  </data>
+  <data name="MenuItem7105.Text" xml:space="preserve">
+    <value>市场部方案申请单查询</value>
+  </data>
+  <data name="MenuItem7106.Text" xml:space="preserve">
+    <value>市场部方案报销单查询</value>
+  </data>
+  <data name="MenuItem7107.Text" xml:space="preserve">
+    <value>RD申请单查询</value>
+  </data>
+  <data name="MenuItem7108.Text" xml:space="preserve">
+    <value>RD报销单查询</value>
+  </data>
+  <data name="MenuItem7109.Text" xml:space="preserve">
+    <value>供应商申请单查询</value>
+  </data>
+  <data name="MenuItem7110.Text" xml:space="preserve">
+    <value>PR查询</value>
+  </data>
+  <data name="MenuItem7111.Text" xml:space="preserve">
+    <value>PO查询</value>
+  </data>
+  <data name="MenuItem7112.Text" xml:space="preserve">
+    <value>PV查询</value>
+  </data>
+  <data name="MenuItem7113.Text" xml:space="preserve">
+    <value>数据导出查询</value>
+  </data>
+  <data name="MenuItem8000.Text" xml:space="preserve">
+    <value>基础数据</value>
+  </data>
+  <data name="MenuItem8101.Text" xml:space="preserve">
+    <value>采购相关</value>
+  </data>
+  <data name="MenuItem8102.Text" xml:space="preserve">
+    <value>物资大类</value>
+  </data>
+  <data name="MenuItem8103.Text" xml:space="preserve">
+    <value>物资</value>
+  </data>
+  <data name="MenuItem8104.Text" xml:space="preserve">
+    <value>运输方式</value>
+  </data>
+  <data name="MenuItem8105.Text" xml:space="preserve">
+    <value>供应商类型</value>
+  </data>
+  <data name="MenuItem8106.Text" xml:space="preserve">
+    <value>采购预算类型</value>
+  </data>
+  <data name="MenuItem8107.Text" xml:space="preserve">
+    <value>采购类型</value>
+  </data>
+  <data name="MenuItem8108.Text" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="MenuItem8109.Text" xml:space="preserve">
+    <value>A/C 类型</value>
+  </data>
+  <data name="MenuItem8110.Text" xml:space="preserve">
+    <value>银行代码</value>
+  </data>
+  <data name="MenuItem8111.Text" xml:space="preserve">
+    <value>支付方式</value>
+  </data>
+  <data name="MenuItem8112.Text" xml:space="preserve">
+    <value>账期</value>
+  </data>
+  <data name="MenuItem8113.Text" xml:space="preserve">
+    <value>汇款类型</value>
+  </data>
+  <data name="MenuItem8114.Text" xml:space="preserve">
+    <value>税率</value>
+  </data>
+  <data name="MenuItem8201.Text" xml:space="preserve">
+    <value>MAA相关</value>
+  </data>
+  <data name="MenuItem8202.Text" xml:space="preserve">
+    <value>客户类型</value>
+  </data>
+  <data name="MenuItem8203.Text" xml:space="preserve">
+    <value>渠道</value>
+  </data>
+  <data name="MenuItem8204.Text" xml:space="preserve">
+    <value>客户区域</value>
+  </data>
+  <data name="MenuItem8205.Text" xml:space="preserve">
+    <value>客户</value>
+  </data>
+  <data name="MenuItem8206.Text" xml:space="preserve">
+    <value>品牌</value>
+  </data>
+  <data name="MenuItem8207.Text" xml:space="preserve">
+    <value>产品系列</value>
+  </data>
+  <data name="MenuItem8208.Text" xml:space="preserve">
+    <value>产品种类</value>
+  </data>
+  <data name="MenuItem8209.Text" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="MenuItem8210.Text" xml:space="preserve">
+    <value>市场部方案</value>
+  </data>
+  <data name="MenuItem8211.Text" xml:space="preserve">
+    <value>陈列形式</value>
+  </data>
+  <data name="MenuItem8212.Text" xml:space="preserve">
+    <value>折扣形式</value>
+  </data>
+  <data name="MenuItem8213.Text" xml:space="preserve">
+    <value>支付方式</value>
+  </data>
+  <data name="MenuItem9000.Text" xml:space="preserve">
+    <value>财务操作</value>
+  </data>
+  <data name="MenuItem9101.Text" xml:space="preserve">
+    <value>币种</value>
+  </data>
+  <data name="MenuItem9102.Text" xml:space="preserve">
+    <value>费用类别(MAA)</value>
+  </data>
+  <data name="MenuItem9103.Text" xml:space="preserve">
+    <value>费用项(MAA)</value>
+  </data>
+  <data name="MenuItem9104.Text" xml:space="preserve">
+    <value>管理费用类型</value>
+  </data>
+  <data name="MenuItem9105.Text" xml:space="preserve">
+    <value>MAA费用期间</value>
+  </data>
+  <data name="MenuItem9106.Text" xml:space="preserve">
+    <value>采购费用期间</value>
+  </data>
+  <data name="MenuItem9107.Text" xml:space="preserve">
+    <value>个人报销费用期间</value>
+  </data>
+  <data name="MenuItem9108.Text" xml:space="preserve">
+    <value>城市及城市类型</value>
+  </data>
+  <data name="MenuItem9109.Text" xml:space="preserve">
+    <value>费用标准管理</value>
+  </data>
+  <data name="MenuItem9110.Text" xml:space="preserve">
+    <value>审批拒绝原因</value>
+  </data>
+  <data name="MenuItem9111.Text" xml:space="preserve">
+    <value>成本中心</value>
+  </data>
+  <data name="MenuItem9112.Text" xml:space="preserve">
+    <value>G\L Account</value>
+  </data>
+  <data name="MenuItem9113.Text" xml:space="preserve">
+    <value>发票状态</value>
+  </data>
+  <data name="MenuItemP000.Text" xml:space="preserve">
+    <value>个人信息</value>
+  </data>
+  <data name="MenuItemR000.Text" xml:space="preserve">
+    <value>报表分析</value>
+  </data>
+  <data name="MenuItemR101.Text" xml:space="preserve">
+    <value>销售报销明细报表</value>
+  </data>
+  <data name="MenuItemR102.Text" xml:space="preserve">
+    <value>总部费用报表 – 分费用类型</value>
+  </data>
+  <data name="MenuItemR103.Text" xml:space="preserve">
+    <value>总部费用报表 – 分区域分城市</value>
+  </data>
+  <data name="MenuItemR104.Text" xml:space="preserve">
+    <value>区域费用报表 – 分费用类型</value>
+  </data>
+  <data name="MenuItemR105.Text" xml:space="preserve">
+    <value>供应商</value>
+  </data>
+  <data name="MenuItemR106.Text" xml:space="preserve">
+    <value>采购请求/订单</value>
+  </data>
+  <data name="MenuItemR107.Text" xml:space="preserve">
+    <value>付款申请</value>
+  </data>
+  <data name="MenuItemR108.Text" xml:space="preserve">
+    <value>个人费用报表</value>
+  </data>
+  <data name="MenuItemR109.Text" xml:space="preserve">
+    <value>R&amp;D 费用统计报告</value>
+  </data>
+  <data name="MenuItemR110.Text" xml:space="preserve">
+    <value>费用汇总表</value>
+  </data>
+  <data name="MenuItemR111.Text" xml:space="preserve">
+    <value>P&amp;L报表</value>
+  </data>
+  <data name="MenuItemR112.Text" xml:space="preserve">
+    <value>市场MAA明细报表</value>
+  </data>
+  <data name="MenuItemR113.Text" xml:space="preserve">
+    <value>RD MAA明细报表</value>
+  </data>
+  <data name="MenuItemR114.Text" xml:space="preserve">
+    <value>销售MAA明细报表</value>
+  </data>
+  <data name="MenuItemR115.Text" xml:space="preserve">
+    <value>MAA payment报表</value>
+  </data>
+  <data name="MenuItemR116.Text" xml:space="preserve">
+    <value>MAA账龄表</value>
+  </data>
+  <data name="MenuItemS000.Text" xml:space="preserve">
+    <value>系统管理</value>
+  </data>
+  <data name="MenuItemS101.Text" xml:space="preserve">
+    <value>组织结构设定</value>
+  </data>
+  <data name="MenuItemS102.Text" xml:space="preserve">
+    <value>用户设定</value>
+  </data>
+  <data name="MenuItemS103.Text" xml:space="preserve">
+    <value>用户职务设定</value>
+  </data>
+  <data name="MenuItemS104.Text" xml:space="preserve">
+    <value>系统角色管理</value>
+  </data>
+  <data name="MenuItemS105.Text" xml:space="preserve">
+    <value>职务权限设置</value>
+  </data>
+  <data name="MenuItemS106.Text" xml:space="preserve">
+    <value>职务业务范围设置</value>
+  </data>
+  <data name="MenuItemS107.Text" xml:space="preserve">
+    <value>职位级别管理</value>
+  </data>
+  <data name="MenuItemS108.Text" xml:space="preserve">
+    <value>系统公告</value>
+  </data>
+  <data name="MenuItemS109.Text" xml:space="preserve">
+    <value>业务操作代理设置</value>
+  </data>
+  <data name="MenuItemS110.Text" xml:space="preserve">
+    <value>代理填单设置</value>
+  </data>
+  <data name="MenuItemS111.Text" xml:space="preserve">
+    <value>流程角色管理</value>
+  </data>
+  <data name="MenuItemS112.Text" xml:space="preserve">
+    <value>流程管理</value>
+  </data>
+  <data name="MenuItemS113.Text" xml:space="preserve">
+    <value>数据导入日志</value>
+  </data>
+  <data name="MenuItemS114.Text" xml:space="preserve">
+    <value>数据导出日志</value>
+  </data>
+  <data name="MenuItemS115.Text" xml:space="preserve">
+    <value>用户区域管理</value>
+  </data>
+  <data name="MenuItemS116.Text" xml:space="preserve">
+    <value>发货信息导入</value>
+  </data>
+  <data name="titleLabel.Text" xml:space="preserve">
+    <value>Campbell Swire 协同办公系统</value>
+  </data>
+  <data name="\" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MenuItem2110.Text" xml:space="preserve">
+    <value>报销信息导入</value>
+  </data>
+  <data name="MenuItemR118.Text" xml:space="preserve">
+    <value>已支付PV报表</value>
+  </data>
+  <data name="MenuItemR119.Text" xml:space="preserve">
+    <value>PV统计报表</value>
+  </data>
+  <data name="MenuItemR120.Text" xml:space="preserve">
+    <value>延期支付PV报表</value>
+  </data>
+</root>
